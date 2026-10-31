@@ -9,7 +9,8 @@ Versionierung nach [Semantic Versioning](https://semver.org/lang/de/).
 
 ### Geändert
 
-- **REDAXO 6:** Composer-AddOn mit AddOn-Klasse (`FriendsOfRedaxo\AiPlatform\AiPlatformAddon`), Code unter `src/`, Backend-Seiten auf den Komponenten und dem Formularsystem des Core, Konsolenbefehle und API-Funktion über die Attribute des Core. `vendor/` liegt nicht mehr im Repository.
+- **Paket:** `yakamara/ai_platform` im Repository yakamara/ai_platform, Namensraum `Yakamara\AiPlatform`; die Fassung für REDAXO 5 bleibt in FriendsOfREDAXO/ai_platform. Die Addon-ID bleibt `ai_platform`, bestehende Installationen behalten Tabellen und Einstellungen.
+- **REDAXO 6:** Composer-AddOn mit AddOn-Klasse (`Yakamara\AiPlatform\AiPlatformAddon`), Code unter `src/`, Backend-Seiten auf den Komponenten und dem Formularsystem des Core, Konsolenbefehle und API-Funktion über die Attribute des Core. `vendor/` liegt nicht mehr im Repository.
 - **API-Schlüssel stehen in der Umgebung, nicht in der Datenbank.** Ein Profil nennt die Variable (`api_key_env`, Vorgabe `AI_PLATFORM_<ANBIETER>_API_KEY`), der Wert steht in `.env.local`. Die Spalte `api_key` gibt es nicht mehr.
 - **Symfony AI 1.0** (`1.0.0-BETA1`) statt 0.14.
 - **MCP-Server über das offizielle PHP-SDK** (`mcp/sdk`) statt eigener Implementierung, als Route `/api/mcp` des AddOns api mit dessen Tokens (Scope `mcp`). Tools sind Methoden mit `#[McpTool]`, gefunden über die Class Discovery des Core.
@@ -134,7 +135,7 @@ Versionierung nach [Semantic Versioning](https://semver.org/lang/de/).
 - **Breaking:** Der feste Bearer-Token in `rex_config` ist entfernt; die Authentifizierung läuft über OAuth. Bestehende Client-Konfigurationen müssen ihre `--header`-Zeile streichen — `mcp-remote` verhandelt selbst.
 - **Breaking:** Der MCP-Endpunkt ist `/mcp`; der alte Aufruf über `?rex-api-call=ai_mcp` ist entfernt.
 - Discovery und Weiterleitungen leiten Schema und Host aus dem tatsächlichen Request ab, damit der Server hinter einem Reverse Proxy oder Tunnel erreichbar bleibt.
-- Klassen auf PSR-4-Namespaces umgestellt (`FriendsOfRedaxo\AiPlatform\…`).
+- Klassen auf PSR-4-Namespaces umgestellt (`Yakamara\AiPlatform\…`).
 
 ## [1.0.0-beta1] – 2026-05-28
 

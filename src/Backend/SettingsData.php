@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Backend;
+namespace Yakamara\AiPlatform\Backend;
 
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Form\Field\Choice;
 use Redaxo\Core\Form\Field\Number;
 use Redaxo\Core\Translation\Translatable;
+use Yakamara\AiPlatform\Service;
 
 /**
  * Formulardaten der Einstellungsseite: Standardprofil je Typ und die Zeitgrenzen für Anfragen an die Anbieter.

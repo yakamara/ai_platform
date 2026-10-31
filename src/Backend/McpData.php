@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Backend;
+namespace Yakamara\AiPlatform\Backend;
 
 use Redaxo\Core\Form\Field\Textarea;
 use Redaxo\Core\Translation\Translatable;

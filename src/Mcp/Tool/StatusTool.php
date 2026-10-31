@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Mcp\Tool;
+namespace Yakamara\AiPlatform\Mcp\Tool;
 
 use Mcp\Capability\Attribute\McpTool;
 use Redaxo\Core\Addon\Addon;

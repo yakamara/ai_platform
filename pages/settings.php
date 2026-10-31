@@ -6,7 +6,6 @@
  * @var Addon $this
  */
 
-use FriendsOfRedaxo\AiPlatform\Backend\SettingsData;
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Filesystem\Url;
 use Redaxo\Core\Form\Form;
@@ -16,6 +15,7 @@ use Redaxo\Core\View\Component\Section;
 use Redaxo\Core\View\Component\SectionVariant;
 use Redaxo\Core\View\Html;
 use Redaxo\Core\View\Message;
+use Yakamara\AiPlatform\Backend\SettingsData;
 
 $addon = $this;
 $data = SettingsData::fromConfig($addon);

@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Console;
+namespace Yakamara\AiPlatform\Console;
 
-use FriendsOfRedaxo\AiPlatform\AiPlatformAddon;
-use FriendsOfRedaxo\AiPlatform\ProviderRegistry;
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Console\AbstractCommand;
 use Redaxo\Core\Database\Sql;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -14,6 +11,9 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Yakamara\AiPlatform\AiPlatformAddon;
+use Yakamara\AiPlatform\ProviderRegistry;
+use Yakamara\AiPlatform\Service;
 
 /**
  * Listet die Profile mit der Umgebungsvariable ihres Schlüssels und ob sie auf dieser Instanz gesetzt ist.

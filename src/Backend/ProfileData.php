@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Backend;
+namespace Yakamara\AiPlatform\Backend;
 
-use FriendsOfRedaxo\AiPlatform\ProviderRegistry;
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Form\Field\Checkbox;
 use Redaxo\Core\Form\Field\Choice;
 use Redaxo\Core\Form\Field\Number;
 use Redaxo\Core\Form\Field\Text;
 use Redaxo\Core\Form\Field\Textarea;
 use Redaxo\Core\Translation\Translatable;
+use Yakamara\AiPlatform\ProviderRegistry;
+use Yakamara\AiPlatform\Service;
 
 use function is_string;
 

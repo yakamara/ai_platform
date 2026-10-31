@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Console;
+namespace Yakamara\AiPlatform\Console;
 
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Console\AbstractCommand;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -14,6 +13,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Throwable;
+use Yakamara\AiPlatform\Service;
 
 /**
  * Schickt einen Prompt an ein Textprofil und gibt die Antwort aus -- über denselben Weg wie

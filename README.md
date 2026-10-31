@@ -1,8 +1,8 @@
 # AI Platform für REDAXO 6
 
 LLM-Profile auf [Symfony AI](https://symfony.com/doc/current/ai/index.html) und ein MCP-Server über das offizielle
-[PHP-SDK](https://github.com/modelcontextprotocol/php-sdk), für REDAXO 6 (Branch `2.x`). Die Fassung für REDAXO 5 ist
-`main` (1.x).
+[PHP-SDK](https://github.com/modelcontextprotocol/php-sdk), für REDAXO 6 (Branch `2.x`). Die Fassung für REDAXO 5 (1.x) liegt
+in [FriendsOfREDAXO/ai_platform](https://github.com/FriendsOfREDAXO/ai_platform).
 
 - **Profile:** ein Profil ist ein Anwendungsfall – Typ (Text, Embeddings, Bilderzeugung, Bildverständnis), Anbieter,
   Modell und die Optionen des Typs. Zehn Anbieter sind eingebaut, weitere kommen über einen Extension Point dazu.
@@ -16,7 +16,7 @@ LLM-Profile auf [Symfony AI](https://symfony.com/doc/current/ai/index.html) und 
 Composer-AddOn wie alle AddOns für REDAXO 6:
 
 ```bash
-composer require friendsofredaxo/ai_platform:2.x-dev
+composer require yakamara/ai_platform:2.x-dev
 php bin/console migrate
 ```
 
@@ -70,7 +70,7 @@ gestreamte Antwort sendet nichts, bis sie fertig ist).
 ## PHP-API
 
 ```php
-use FriendsOfRedaxo\AiPlatform\Service;
+use Yakamara\AiPlatform\Service;
 
 $ai = Service::getInstance();
 
@@ -130,7 +130,7 @@ auch ohne laufen.
 ## MCP-Server
 
 Der Server spricht Streamable HTTP und läuft als Route `/api/mcp` des AddOns
-[api](https://github.com/FriendsOfREDAXO/api) (Branch `2.x`). Das AddOn bringt mit, was ein Endpunkt von außen braucht:
+[api](https://github.com/yakamara/api) (Branch `2.x`). Das AddOn bringt mit, was ein Endpunkt von außen braucht:
 Tokens mit Ablaufdatum, Scopes, Routing vor yrewrite. Ein Client braucht ein Token mit dem Scope **`mcp`**
 (*API → Token*). Ohne das AddOn api gibt es keinen MCP-Server; Profile und PHP-API arbeiten unverändert.
 

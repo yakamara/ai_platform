@@ -6,9 +6,6 @@
  * @var Addon $this
  */
 
-use FriendsOfRedaxo\AiPlatform\Backend\McpData;
-use FriendsOfRedaxo\AiPlatform\Mcp\McpEndpoint;
-use FriendsOfRedaxo\AiPlatform\Mcp\ToolRegistry;
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Filesystem\Url;
 use Redaxo\Core\Form\Form;
@@ -21,6 +18,9 @@ use Redaxo\Core\View\Component\Table;
 use Redaxo\Core\View\Component\TableColumn;
 use Redaxo\Core\View\Html;
 use Redaxo\Core\View\Message;
+use Yakamara\AiPlatform\Backend\McpData;
+use Yakamara\AiPlatform\Mcp\McpEndpoint;
+use Yakamara\AiPlatform\Mcp\ToolRegistry;
 
 use function Redaxo\Core\View\escape;
 

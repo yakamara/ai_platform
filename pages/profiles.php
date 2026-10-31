@@ -6,11 +6,6 @@
  * @var Addon $this
  */
 
-use FriendsOfRedaxo\AiPlatform\AiPlatformAddon;
-use FriendsOfRedaxo\AiPlatform\Api\TestConnectionFunction;
-use FriendsOfRedaxo\AiPlatform\Backend\ProfileData;
-use FriendsOfRedaxo\AiPlatform\ProviderRegistry;
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Backend\Accesskey;
 use Redaxo\Core\Database\Sql;
@@ -28,6 +23,11 @@ use Redaxo\Core\View\DataList;
 use Redaxo\Core\View\Html;
 use Redaxo\Core\View\HtmlAttributes;
 use Redaxo\Core\View\Message;
+use Yakamara\AiPlatform\AiPlatformAddon;
+use Yakamara\AiPlatform\Api\TestConnectionFunction;
+use Yakamara\AiPlatform\Backend\ProfileData;
+use Yakamara\AiPlatform\ProviderRegistry;
+use Yakamara\AiPlatform\Service;
 
 use function Redaxo\Core\View\escape;
 

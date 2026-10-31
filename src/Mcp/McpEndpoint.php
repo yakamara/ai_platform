@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Mcp;
+namespace Yakamara\AiPlatform\Mcp;
 
-use FriendsOfRedaxo\Api\Auth\BearerAuth;
-use FriendsOfRedaxo\Api\RouteCollection;
-use FriendsOfRedaxo\Api\Token;
 use Mcp\Server\Transport\Http\Middleware\PassthroughMiddleware;
 use Mcp\Server\Transport\StreamableHttpTransport;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -17,6 +14,9 @@ use Redaxo\Core\Filesystem\Url;
 use Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Route;
+use Yakamara\Api\Auth\BearerAuth;
+use Yakamara\Api\RouteCollection;
+use Yakamara\Api\Token;
 
 /**
  * Der MCP-Endpunkt `/api/mcp`, als Route des API-AddOns.

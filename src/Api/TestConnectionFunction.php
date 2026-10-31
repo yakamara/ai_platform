@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Api;
+namespace Yakamara\AiPlatform\Api;
 
-use FriendsOfRedaxo\AiPlatform\ProviderRegistry;
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\ApiFunction\ApiFunction;
 use Redaxo\Core\ApiFunction\AsApiFunction;
 use Redaxo\Core\Core;
@@ -14,6 +12,8 @@ use Redaxo\Core\Http\Request;
 use Redaxo\Core\Http\Response;
 use Redaxo\Core\Translation\I18n;
 use Throwable;
+use Yakamara\AiPlatform\ProviderRegistry;
+use Yakamara\AiPlatform\Service;
 
 /**
  * Verbindungstest eines Profils für den Knopf auf der Profilseite: schickt die kleinste Anfrage, die zeigt, dass

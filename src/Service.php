@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform;
+namespace Yakamara\AiPlatform;
 
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Core;

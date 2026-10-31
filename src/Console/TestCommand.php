@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Console;
+namespace Yakamara\AiPlatform\Console;
 
-use FriendsOfRedaxo\AiPlatform\AiPlatformAddon;
-use FriendsOfRedaxo\AiPlatform\Service;
 use Redaxo\Core\Console\AbstractCommand;
 use Redaxo\Core\Database\Sql;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -16,6 +14,8 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Throwable;
+use Yakamara\AiPlatform\AiPlatformAddon;
+use Yakamara\AiPlatform\Service;
 
 use function sprintf;
 

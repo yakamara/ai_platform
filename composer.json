@@ -1,15 +1,19 @@
 {
-    "name": "friendsofredaxo/ai_platform",
+    "name": "yakamara/ai_platform",
     "description": "REDAXO AI Platform: LLM-Profile mit Symfony AI, Schlüssel aus Umgebungsvariablen, MCP-Server über das offizielle PHP-SDK",
     "type": "redaxo-addon",
     "license": "MIT",
     "authors": [
         {
+            "name": "Yakamara Media GmbH & Co. KG",
+            "homepage": "https://yakamara.de"
+        },
+        {
             "name": "Friends Of REDAXO",
             "homepage": "https://github.com/FriendsOfREDAXO"
         }
     ],
-    "homepage": "https://github.com/FriendsOfREDAXO/ai_platform",
+    "homepage": "https://github.com/yakamara/ai_platform",
     "require": {
         "php": "^8.5",
         "mcp/sdk": "^0.9",
@@ -31,16 +35,16 @@
         "symfony/psr-http-message-bridge": "^8.1"
     },
     "suggest": {
-        "friendsofredaxo/api": "Stellt den MCP-Server unter /api/mcp bereit und verwaltet seine Zugangstoken"
+        "yakamara/api": "Stellt den MCP-Server unter /api/mcp bereit und verwaltet seine Zugangstoken"
     },
     "autoload": {
         "psr-4": {
-            "FriendsOfRedaxo\\AiPlatform\\": "src/"
+            "Yakamara\\AiPlatform\\": "src/"
         }
     },
     "extra": {
         "redaxo": {
-            "addon-class": "FriendsOfRedaxo\\AiPlatform\\AiPlatformAddon"
+            "addon-class": "Yakamara\\AiPlatform\\AiPlatformAddon"
         }
     }
 }

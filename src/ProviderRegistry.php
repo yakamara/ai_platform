@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform;
+namespace Yakamara\AiPlatform;
 
 use Redaxo\Core\Env;
 use Redaxo\Core\ExtensionPoint\Extension;

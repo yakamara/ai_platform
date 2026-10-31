@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform\Mcp;
+namespace Yakamara\AiPlatform\Mcp;
 
 use Mcp\Capability\Attribute\McpTool;
 use Mcp\Schema\ToolAnnotations;

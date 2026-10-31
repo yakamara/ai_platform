@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace FriendsOfRedaxo\AiPlatform;
+namespace Yakamara\AiPlatform;
 
-use FriendsOfRedaxo\AiPlatform\Mcp\McpEndpoint;
 use Override;
 use Redaxo\Core\Addon\Addon;
 use Redaxo\Core\Addon\OwnedSchema;
@@ -16,6 +15,7 @@ use Redaxo\Core\Database\Column;
 use Redaxo\Core\Database\Index;
 use Redaxo\Core\Database\Table;
 use Redaxo\Core\View\Asset;
+use Yakamara\AiPlatform\Mcp\McpEndpoint;
 
 /**
  * LLM-Profile für REDAXO 6 auf Symfony AI.

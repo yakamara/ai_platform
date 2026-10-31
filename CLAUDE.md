@@ -1,7 +1,7 @@
 # CLAUDE.md
 
-AddOn `ai_platform`, Branch `2.x` für REDAXO 6 (Composer-AddOn, `friendsofredaxo/ai_platform`). `main` ist die Fassung
-für REDAXO 5 (1.x) und wird hier nicht angefasst.
+AddOn `ai_platform`, Branch `2.x` für REDAXO 6 (Composer-AddOn, `yakamara/ai_platform`). Die Fassung für REDAXO 5 (1.x)
+liegt in FriendsOfREDAXO/ai_platform und wird hier nicht angefasst.
 
 - **Profile** in `rex_ai_profile`, Schlüssel nie in der Datenbank: `ProviderRegistry::createPlatform()` holt ihn aus
   der Umgebungsvariable des Profils (`api_key_env`, Vorgabe `AI_PLATFORM_<ANBIETER>_API_KEY`) und reicht ihn den
